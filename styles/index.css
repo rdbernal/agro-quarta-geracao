@@ -1,0 +1,17 @@
+@import url('./variables.css');
+@import url('./header.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+body {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+
+  background: rgba(43, 40, 40, 0.269);
+}
