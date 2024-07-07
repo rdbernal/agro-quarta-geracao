@@ -2,13 +2,14 @@
   width: 100%;
   min-height: 167px;
   position: absolute;
-  background: rgba(255, 0, 0, 0.465);
+  /* background: rgba(255, 0, 0, 0.465); */
 
   img {
     width: 123.95px;
     position: absolute;
     top: 57px;
     left: 57px;
+
   }
 
   #burger-menu {
@@ -37,7 +38,7 @@
   }
 
   .line__one.active {
-    transform: rotate(45deg) translate(4.9497px, 4.9497px);
+    transform: rotate(45deg) translate(5.1972px, 5.1972px);
   }
   .line__two.active {
     transform: rotate(-45deg);
@@ -78,6 +79,10 @@
   nav ul li {
     margin-left: 57px;
     opacity: 0;
+
+    a {
+      color: var(--light-text);
+    }
   }
 
   nav a {
@@ -97,5 +102,98 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #header {
+    img {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    #burger-menu {
+      display: none;
+    }
+
+    nav {
+      top: 160px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 92%;
+      height: auto;
+      padding-top: 0;
+      background: none;
+    }
+
+    nav ul {
+      height: 100%;
+      transform: translateY(0);
+      flex-direction: row;
+      align-items: center;
+    }
+
+    nav ul li {
+      transform: translateX(0);
+      opacity: 1;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+
+        a:hover {
+          color: var(--light-green-text);
+          transition: 0.1s; 
+        }
+    }
+
+    nav ul li.active {
+      color: var(--light-green-text);
+
+      a {
+        color: inherit;
+      }
+
+      span {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    nav ul li span {
+      height: 2px;
+      background: var(--light-green-text);
+      border-radius: 50px;
+      margin-top: 6px;
+      transform: translateX(-10px);
+      opacity: 0;
+      transition: 0.1s;
+    }
+
+    nav ul li span.active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 1104px) {
+  #header {
+    .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 72px 42px 51px ;
+    }
+  
+    img {
+      position: static;
+      transform: translateX(0);
+    }
+
+    nav {
+      max-width: 484px;
+      position: static;
+      transform: translateX(0);
+    }
   }
 }
