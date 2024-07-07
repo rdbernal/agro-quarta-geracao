@@ -2,14 +2,17 @@
   width: 100%;
   min-height: 167px;
   position: absolute;
-  /* background: rgba(255, 0, 0, 0.465); */
+
+  .content {
+    max-width: 1440px;
+    margin: auto;
+  }
 
   img {
     width: 123.95px;
     position: absolute;
     top: 57px;
     left: 57px;
-
   }
 
   #burger-menu {
@@ -82,16 +85,16 @@
 
     a {
       color: var(--light-text);
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 18px;
     }
   }
+}
 
-  nav a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 18px;
-    color: #ffffff;
-  }
+#header.secondary {
+  background: var(--dark-green);
 }
 
 @keyframes slide__menu__items {
@@ -107,6 +110,8 @@
 
 @media screen and (min-width: 767px) {
   #header {
+    min-height: 240px;
+
     img {
       left: 50%;
       transform: translateX(-50%);
@@ -117,7 +122,7 @@
     }
 
     nav {
-      top: 160px;
+      top: 185px;
       left: 50%;
       transform: translateX(-50%);
       width: 90%;
@@ -141,10 +146,10 @@
       display: flex;
       flex-direction: column;
 
-        a:hover {
-          color: var(--light-green-text);
-          transition: 0.1s; 
-        }
+      a:hover {
+        color: var(--light-green-text);
+        transition: 0.1s; 
+      }
     }
 
     nav ul li.active {
@@ -179,6 +184,8 @@
 
 @media screen and (min-width: 1104px) {
   #header {
+    min-height: 190px;
+
     .content {
       display: flex;
       justify-content: space-between;
@@ -186,6 +193,7 @@
     }
   
     img {
+      top: 72px;
       position: static;
       transform: translateX(0);
     }

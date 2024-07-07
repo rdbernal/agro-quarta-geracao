@@ -10,8 +10,8 @@
 
 body {
   position: relative;
-  max-width: 1440px;
-  margin: auto;
+  /* max-width: 1440px; */
+  /* margin: auto; */
 
   background: rgba(43, 40, 40, 0.269);
 }
