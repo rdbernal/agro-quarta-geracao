@@ -153,6 +153,35 @@
       }
     }
 
+    nav ul li.contact {
+      height: 32px;
+      background: var(--medium-green);
+      display: flex;
+      justify-content: center;
+      margin-bottom: 8px;
+      padding: 0 18px;
+      transform: skew(-20deg);
+
+      a {
+        transform: skew(20deg);
+        color: var(--green-dark-text);
+      }
+
+      a:hover {
+        color: var(--green-dark-text); 
+      }
+
+      &:hover {
+        background: var(--light-green);
+        transition: 0.1s;
+      }
+
+      &.active {
+        color: var(--green-dark-text); 
+        background: var(--light-green);
+      }
+    }
+
     nav ul li.active {
       color: var(--light-green-text);
 
