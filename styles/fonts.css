@@ -1,0 +1,21 @@
+.xl {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.lg {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/* .md {}
+
+.sm {}
+
+.xs {} */
+
+.white {
+  color: var(--light-text);
+}

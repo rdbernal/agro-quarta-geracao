@@ -1,6 +1,9 @@
 @import url("./variables.css");
+@import url("./fonts.css");
 @import url("./header.css");
+@import url("./carousel.css");
 @import url("./footer.css");
+
 
 * {
   margin: 0;
