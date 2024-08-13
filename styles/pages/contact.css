@@ -1,0 +1,35 @@
+#sellers {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+
+  .images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    padding: 33px 0;
+
+    background-image: url("/assets/vectors/ellipse.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    img {
+      width: 38%;
+    }
+
+    img:first-child {
+      margin-bottom: 24px;
+    }
+
+    img:last-child {
+      margin-top: 24px;
+    }
+  }
+
+  .content {
+    padding: 0 54px;
+  }
+}
