@@ -1,5 +1,12 @@
+#sellers,
+#address {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 #sellers {
   margin-top: 72px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   gap: 31px;
@@ -14,7 +21,7 @@
 
     background-image: url("/assets/vectors/ellipse.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: top right 60%;
 
     img {
       width: 38%;
@@ -31,5 +38,160 @@
 
   .content {
     padding: 0 54px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+
+    h1 {
+      max-width: 531px;
+      color: var(--dark-text);
+
+      strong {
+        background: var(--light-green);
+      }
+    }
+
+    .sellers {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      article {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        img {
+          width: 44px;
+          height: 44px;
+        }
+
+        .data {
+          text-transform: uppercase;
+          display: flex;
+          flex-direction: column;
+          color: var(--dark-green);
+
+          span {
+            font-weight: 900;
+          }
+          
+          a {
+            text-decoration: none;
+            color: var(--dark-green);
+          }
+        }
+      }
+    }
+  }
+}
+
+#address {
+  display: flex;
+  flex-direction: column;
+  gap: 66px;
+  padding: 0 54px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    article {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--dark-green);
+      }
+
+      &.phones {
+        align-items: center;
+        
+        .phone-numbers {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      &.address {
+        address {
+          font-size: 16px;
+          font-style: normal;
+          color: var(--dark-green);
+        }
+      }
+  
+      &.mail {
+        align-items: center;
+
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .map {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1084px) {
+  #sellers {
+    padding: 0 64px;
+    flex-direction: row;
+    gap: 124px;
+    margin-bottom: 64px;
+
+    .images {
+      width: 55%;
+      padding: 0;
+      justify-content: flex-end;
+    }
+
+    .content {
+      padding: 0;
+      width: 45%;
+    }
+  }
+
+  #address {
+    padding: 0 64px;
+    flex-direction: row;
+    justify-content: center;
+
+    .content {
+      width: 45%;
+      padding-left: 15%;
+      justify-content: center;
+
+      article {
+        &.address {
+          address {
+            font-size: 18px;
+          }
+        }
+
+        &.mail {
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .map {
+      width: 55%;
+      height: 275px;
+    }
   }
 }

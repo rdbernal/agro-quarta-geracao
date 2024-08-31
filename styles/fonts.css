@@ -6,8 +6,14 @@
 
 .lg {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 40px;
+}
+
+.sm {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 /* .md {}
