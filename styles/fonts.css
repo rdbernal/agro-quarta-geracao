@@ -4,10 +4,22 @@
   line-height: 50px;
 }
 
+.semi-xl {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 45px;
+}
+
 .lg {
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
+}
+
+.semi-lg {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
 }
 
 .sm {
