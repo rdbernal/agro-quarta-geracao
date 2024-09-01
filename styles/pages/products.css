@@ -1,12 +1,12 @@
 #banner,
-#products {
+#products-banner {
   .content {
     max-width: 1440px;
     margin: 0 auto;
   }
 }
 
-#banner {
+#products-banner {
   padding: 258px 54px 57px;
   background: linear-gradient(167.96deg, rgba(21, 39, 13, 0.776) 72.13%, rgba(21, 39, 13, 0.296) 102.65%, rgba(255, 255, 255, 0) 102.65%),
     url("/assets/images/products-banner.jpg");
@@ -75,7 +75,7 @@
 }
 
 @media only screen and (min-width: 1084px) {
-  #banner {
+  #products-banner {
     padding: 381px 42px 160px;
     h1 {
       font-size: 60px;

@@ -1,0 +1,129 @@
+#logistic-banner {
+  padding: 72px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  img {
+    width: 100%;
+    max-width: 1195px;
+    margin: 0 auto;
+  }
+
+  .logistics-desktop {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 98px;
+
+    background: var(--medium-green);
+
+    z-index: -1;
+  }
+}
+
+#logistic {
+  position: relative;
+
+  .content {
+    position: relative;
+    padding: 72px 54px 163px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    h1 {
+      background: var(--light-green);
+      margin-bottom: 32px;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 46px;
+
+      article {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      p {
+        color: var(--dark-green);
+      }
+
+      + p {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: var(--medium-green);
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  #logistic-banner {
+    .logistics-desktop {
+      display: block;
+    }
+
+    .logistics-mobile {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1084px) {
+  #logistic-banner {
+    padding: 142px 42px 124px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  #logistic {
+    .content {
+      width: 60%;
+      padding: 31px 64px;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20%;
+        height: 100%;
+        background: var(--medium-green);
+      }
+
+      &::after {
+        right: 0;
+        top: 0;
+        width: 20%;
+        height: 100%;
+      }
+  }
+}
