@@ -4,6 +4,7 @@
 @import url("./carousel.css");
 @import url("./footer.css");
 /* pages */
+@import url("./pages/about.css");
 @import url("./pages/products.css");
 @import url("./pages/logistic.css");
 @import url("./pages/contact.css");
