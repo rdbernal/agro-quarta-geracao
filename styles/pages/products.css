@@ -76,18 +76,21 @@
 
 @media only screen and (min-width: 1084px) {
   #products-banner {
-    padding: 381px 42px 160px;
-    h1 {
-      font-size: 60px;
-      max-width: 628px;
-      margin-bottom: 27px;
-    }
-
-    h2 {
-      font-size: 30px;
-
-      strong {
-        width: max-content
+    .content {
+      padding: 381px 42px 160px;
+      
+      h1 {
+        font-size: 60px;
+        max-width: 628px;
+        margin-bottom: 27px;
+      }
+      
+      h2 {
+        font-size: 30px;
+        
+        strong {
+          width: max-content
+        }
       }
     }
   }
