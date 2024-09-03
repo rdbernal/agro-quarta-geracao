@@ -25,6 +25,10 @@
 
       color: inherit;
     }
+
+    .phone {
+      text-decoration: none;
+    }
   }
 
   hr {
