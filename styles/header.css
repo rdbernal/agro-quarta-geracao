@@ -12,12 +12,15 @@
     z-index: 11;
   }
 
-  img {
-    width: 123.95px;
+  a.logo-link {
+    height: 55.7px;
     position: absolute;
     top: 57px;
     left: 57px;
+  }
 
+  img {
+    width: 123.95px;
     z-index: 11;
   }
 
@@ -121,7 +124,7 @@
   #header {
     min-height: 240px;
 
-    img {
+    a.logo-link {
       left: 50%;
       transform: translateX(-50%);
     }
@@ -230,7 +233,7 @@
       padding: 72px 42px 51px ;
     }
   
-    img {
+    a.logo-link {
       top: 72px;
       position: static;
       transform: translateX(0);
