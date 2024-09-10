@@ -1,5 +1,7 @@
 //Body selection
 const body = document.querySelector("body");
+//Header selection
+const header = document.querySelector("#header")
 //Burger menu selection
 const burger__menu = document.querySelector(".js-burger__menu");
 //Burger menu lines selection
@@ -13,19 +15,19 @@ const nav__menu__links = document.querySelectorAll(".js-menu__links");
 
 function showMenu() {
   //Fixed body when menu is open
-  body.classList.toggle("body-hidden");
+  body.classList.toggle('body-hidden');
   //Menu animation
-  nav__menu.classList.toggle("active");
+  nav__menu.classList.toggle('active');
   //Burger menu animation
   burger__menu__lines.forEach((item) => {
-    item.classList.toggle("active");
+    item.classList.toggle('active');
   });
   //Menu items animation
   nav__menu__items.forEach((item, index) => {
     // console.log(item);
 
     if (item.style.animation) {
-      item.style.animation = "";
+      item.style.animation = '';
     } else {
       item.style.animation = `slide__menu__items 0.5s forwards ${index / 7}s`;
     }
@@ -37,6 +39,9 @@ function showMenu() {
   } else {
     body.style.overflowY = 'auto';
   }
+
+  //Header
+  header.classList.toggle('')
 }
 
 function showIndicator() {
