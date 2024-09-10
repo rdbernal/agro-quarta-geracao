@@ -34,11 +34,12 @@ function showMenu() {
   });
 
   //Fixed body (no scroll)
-  if (body.style.overflowY !== 'hidden') { 
-    body.style.overflowY = 'hidden';
-  } else {
-    body.style.overflowY = 'auto';
-  }
+  // if (body.style.overflowY !== 'hidden') { 
+  //   body.style.overflowY = 'hidden';
+  // } else {
+  //   body.style.overflowY = 'auto';
+  // }
+  body.classList.toggle('open-menu');
 
   //Header
   header.classList.toggle('')

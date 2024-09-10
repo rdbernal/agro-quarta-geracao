@@ -81,7 +81,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    background: blue;
+    background: green;
   }
 
   nav ul {
@@ -105,12 +105,6 @@
       font-weight: 600;
       line-height: 18px;
     }
-  }
-
-  &.active {
-    position: fixed;
-    left: 0;
-    top: 0;
   }
 }
 
