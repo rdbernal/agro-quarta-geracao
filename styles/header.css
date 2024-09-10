@@ -78,6 +78,10 @@
 
   nav.active {
     transform: translateX(0);
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: red;
   }
 
   nav ul {
