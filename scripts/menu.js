@@ -30,6 +30,13 @@ function showMenu() {
       item.style.animation = `slide__menu__items 0.5s forwards ${index / 7}s`;
     }
   });
+
+  //Fixed body (no scroll)
+  if (body.style.overflowY !== 'hidden') { 
+    body.style.overflowY = 'hidden';
+  } else {
+    body.style.overflowY = 'auto';
+  }
 }
 
 function showIndicator() {

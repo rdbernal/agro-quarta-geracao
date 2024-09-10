@@ -150,6 +150,8 @@
   background: var(--green-dark-text);
   color: var(--light-text);
   width: max-content;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 1084px) {
